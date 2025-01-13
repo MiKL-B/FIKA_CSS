@@ -1,92 +1,92 @@
 <template>
-<div class="section">
-        <p>Input</p>
+  <div class="section">
+    <h3>Input</h3>
 
-        <!-- input type text -->
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" type="name" placeholder="John Doe" />
-        </div>
+    <!-- input type text -->
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" type="name" placeholder="John Doe" />
+    </div>
 
-        <!-- input type email -->
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="email@example.com" />
-        </div>
+    <!-- input type email -->
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="email@example.com" />
+    </div>
 
-        <!-- input type password -->
-        <div class="field">
-          <label for="password">Password</label>
-          <input id="password" type="password" placeholder="Password" />
-        </div>
+    <!-- input type password -->
+    <div class="field">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Password" />
+    </div>
 
-        <!-- input type checkbox -->
-        <div class="field">
-          <label>
-            <input type="checkbox" />
-            <span>Checkbox</span>
-          </label>
-        </div>
+    <!-- input type checkbox -->
+    <div class="field">
+      <label>
+        <input type="checkbox" />
+        <span>Checkbox</span>
+      </label>
+    </div>
 
-        <!-- input type radio -->
-        <div class="field">
-          <label for="kraken">
-            <input type="radio" id="kraken" name="monster" value="K" />
-            <span>Kraken</span>
-          </label>
-          <label for="sasquatch">
-            <input type="radio" id="sasquatch" name="monster" value="K" />
-            <span>Sasquatch</span>
-          </label>
-          <label for="mothman">
-            <input type="radio" id="mothman" name="monster" value="K" />
-            <span>Mothman</span>
-          </label>
-        </div>
+    <!-- input type radio -->
+    <div class="field">
+      <label for="kraken">
+        <input type="radio" id="kraken" name="monster" value="K" />
+        <span>Kraken</span>
+      </label>
+      <label for="sasquatch">
+        <input type="radio" id="sasquatch" name="monster" value="K" />
+        <span>Sasquatch</span>
+      </label>
+      <label for="mothman">
+        <input type="radio" id="mothman" name="monster" value="K" />
+        <span>Mothman</span>
+      </label>
+    </div>
 
-        <!-- input type date -->
-        <div class="field">
-          <label for="date">Date</label>
-          <input id="date" type="date" />
-        </div>
+    <!-- input type date -->
+    <div class="field">
+      <label for="date">Date</label>
+      <input id="date" type="date" />
+    </div>
 
-        <!-- input type color -->
-        <div class="field">
-          <label for="color">Color</label>
-          <input id="color" type="color" />
-        </div>
+    <!-- input type color -->
+    <div class="field">
+      <label for="color">Color</label>
+      <input id="color" type="color" />
+    </div>
 
-        <!-- input type range -->
-        <div class="field">
-          <label for="range">Range</label>
-          <input id="range" type="range" />
-        </div>
+    <!-- input type range -->
+    <div class="field">
+      <label for="range">Range</label>
+      <input id="range" type="range" />
+    </div>
 
-        <!-- input type file -->
-        <div class="field">
-          <label for="file">File</label>
-          <input id="file" type="file" />
-        </div>
+    <!-- input type file -->
+    <div class="field">
+      <label for="file">File</label>
+      <input id="file" type="file" />
+    </div>
 
-        <!-- input type number -->
-        <div class="field">
-          <label for="number">Number</label>
-          <input id="numbeer" type="number" placeholder="1" />
-        </div>
+    <!-- input type number -->
+    <div class="field">
+      <label for="number">Number</label>
+      <input id="numbeer" type="number" placeholder="1" />
+    </div>
 
-        <!-- input type search -->
-        <div class="field">
-          <label for="search">Search</label>
-          <input type="search" placeholder="Search" />
-        </div>
+    <!-- input type search -->
+    <div class="field">
+      <label for="search">Search</label>
+      <input type="search" placeholder="Search" />
+    </div>
 
-        <!-- input type tel -->
-        <div class="field">
-          <label for="tel">Phone</label>
-          <input id="tel" type="tel" placeholder="0102030405" />
-        </div>
+    <!-- input type tel -->
+    <div class="field">
+      <label for="tel">Phone</label>
+      <input id="tel" type="tel" placeholder="0102030405" />
+    </div>
 
-        <pre class="code-example">
+    <pre class="code-example">
 <code>&lt;!-- input type text --&gt;
 &lt;div class=&quot;field&quot;&gt;
   &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
@@ -170,11 +170,11 @@
   &lt;label for=&quot;tel&quot;&gt;Phone&lt;/label&gt;
   &lt;input id=&quot;tel&quot; type=&quot;tel&quot; placeholder=&quot;0102030405&quot; /&gt;
 &lt;/div&gt;</code></pre>
-      </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name:"DocsInput"
-}
+  name: "DocsInput",
+};
 </script>

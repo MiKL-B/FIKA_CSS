@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <p>Buttons</p>
+    <h3>Button</h3>
     <div class="flex">
       <button>Button</button>
       <button class="primary">Button</button>

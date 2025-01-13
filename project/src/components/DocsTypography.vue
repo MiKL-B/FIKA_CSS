@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="section">
-      <p>Heading</p>
+      <h3>Heading</h3>
       <h1>Heading</h1>
       <h2>Heading</h2>
       <h3>Heading</h3>
@@ -18,7 +18,7 @@
     </div>
     <!-- link -->
     <div class="section">
-      <p>Link</p>
+      <h3>Link</h3>
       <a href="#">Link</a>
       <pre
         class="code-example"

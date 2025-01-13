@@ -1,14 +1,14 @@
 <template>
   <div class="section">
-    <p>Details</p>
+    <h3>Details</h3>
     <details>
       <summary>Summary</summary>
       <p>Details content here...</p>
     </details>
-    <details>
-      <summary>Summary</summary>
-      Details content here...
-    </details>
+    <pre class="code-example"><code>&lt;details&gt;
+  &lt;summary&gt;Summary&lt;/summary&gt;
+  &lt;p&gt;Details content here...&lt;/p&gt;
+&lt;/details&gt;</code></pre>
   </div>
 </template>
 

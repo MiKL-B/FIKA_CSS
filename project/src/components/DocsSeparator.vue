@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <p>Separator</p>
+    <h3>Separator</h3>
     <hr />
     <pre class="code-example"><code>&lt;hr&gt;</code></pre>
   </div>

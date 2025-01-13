@@ -63,5 +63,6 @@ export default {
 <style>
 .link-doc{
   text-transform: capitalize;
+  width:100px;
 }
 </style>

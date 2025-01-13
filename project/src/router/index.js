@@ -14,6 +14,7 @@ import DocsSelect from '@/components/DocsSelect.vue'
 import DocsSeparator from '@/components/DocsSeparator.vue'
 import DocsTables from '@/components/DocsTables.vue'
 import DocsTextarea from '@/components/DocsTextarea.vue'
+import DocsIntroduction from '@/components/DocsIntroduction.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -32,6 +33,12 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/DocsView.vue'),
       children: [
+        {
+          path: '',
+          name:"DocsIntroduction",
+          component: DocsIntroduction,
+          meta:{title:"Introduction"},
+        },
         {
           path: 'installation',
           name:"DocsInstallation",

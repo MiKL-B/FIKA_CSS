@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <p>Blockquote</p>
+    <h3>Blockquote</h3>
     <blockquote>
       Être minimaliste, c’est tenter d’évacuer ce qui n’est pas essentiel, de
       façon à apprécier pleinement ce qui nous est vraiment précieux.

@@ -1,6 +1,7 @@
 <template>
   <div class="section">
-    <p>Lists</p>
+    <h3>Lists</h3>
+    <!-- unordered list -->
     <ul>
       <li>Item 1</li>
       <li>
@@ -12,6 +13,8 @@
       </li>
       <li>Item 3</li>
     </ul>
+
+    <!-- ordered list -->
     <ol>
       <li>Item 1</li>
       <li>
@@ -23,6 +26,31 @@
       </li>
       <li>Item 3</li>
     </ol>
+    <pre class="code-example"><code>&lt;!-- unordered list --&gt;
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;
+    Item 2
+    &lt;ul&gt;
+      &lt;li&gt;Item 2.1&lt;/li&gt;
+      &lt;li&gt;Item 2.2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ordered list --&gt;
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;
+    Item 2
+    &lt;ul&gt;
+      &lt;li&gt;Item 2.1&lt;/li&gt;
+      &lt;li&gt;Item 2.2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
   </div>
 </template>
 
