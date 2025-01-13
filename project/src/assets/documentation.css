@@ -1,0 +1,61 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container-docs{
+  padding: 0 20px;
+}
+.top-section {
+  padding: 10rem 0;
+}
+.section {
+  padding-top:4rem;
+  padding-bottom:4rem;
+}
+
+.code-example {
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  padding: 1rem;
+  color: var(--grey);
+  overflow-x: auto;
+}
+button,
+input,
+a {
+  margin-bottom: 1rem;  
+}
+.separator-container {
+  height: 200px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap:0.5rem;
+}
+.router-link-exact-active{
+  color:var(--violet);
+}
+@media screen and (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+.display-mobile{
+  display: block;
+}
+.display-desktop{
+  display: none;
+}
+@media screen and (min-width:768px)
+{
+  .display-mobile{
+    display: none;
+  }
+  .display-desktop{
+    display: block;
+  }
+}
