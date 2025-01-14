@@ -17,6 +17,9 @@ export default {
           name: "blockquote",
         },
         {
+          name: "breadcrumb",
+        },
+        {
           name: "button",
         },
         {

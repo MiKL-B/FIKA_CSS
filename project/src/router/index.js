@@ -19,6 +19,7 @@ import DocsTheme from '@/components/DocsTheme.vue'
 import ContactView from '@/views/ContactView.vue'
 import ChangelogView from '@/views/ChangelogView.vue'
 import NotFoundCompo from '@/components/NotFoundCompo.vue'
+import DocsBreadcrumb from '@/components/DocsBreadcrumb.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -81,6 +82,12 @@ const router = createRouter({
           name:"DocsBlockquote",
           component: DocsBlockquote,
           meta:{title:"Blockquote"},
+        },
+        {
+          path: 'breadcrumb',
+          name:"DocsBreadcrumb",
+          component: DocsBreadcrumb,
+          meta:{title:"Breadcrumb"},
         },
         {
           path: 'button',

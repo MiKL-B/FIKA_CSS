@@ -313,3 +313,14 @@ hr {
   border-left: none;
   border-right: none;
 }
+/* breadcrumb */
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  padding: 0 20px;
+  margin: 1rem 0 0 0;
+}
+.breadcrumb li:not(:first-child)::before{
+  content:"/";
+  margin: 0.5em;
+}

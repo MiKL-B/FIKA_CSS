@@ -18,7 +18,6 @@
           }}</router-link>
           <span v-else>{{ route.title }}</span>
           <!-- Si c'est la dernière route, on affiche sans lien -->
-          <span v-if="index < breadcrumbs.length - 1" class="chevron">/</span>
         </li>
       </ul>
       <RouterView class="container-docs" />
@@ -45,16 +44,8 @@ export default {
 };
 </script>
 <style>
-.breadcrumb {
-  list-style: none;
-  display: flex;
-  padding: 0 20px;
-  margin: 1rem 0 0 0;
-}
 
-.chevron {
-  margin: 0 0.5rem;
-}
+
 
 .content {
   display: flex;
