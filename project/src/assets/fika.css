@@ -2,12 +2,6 @@
 @import "./documentation.css";
 
 :root {
-  --black: #000000;
-  --white: #f2f2f2;
-  --bg-body: #1b1c1f;
-  --background: #282c34;
-  --light-grey: rgba(0, 0, 0, 0.14);
-  --light-grey-2: #bbb;
   --grey: #5a6374;
   --shadow: #5a637444;
   --red: #e06c75;
@@ -18,6 +12,13 @@
   --violet: #c678dd;
   --brain: #fc76a3;
   --cyan: #56b6c2;
+  --black: #000000;
+  --white: #f2f2f2;
+  --bg-body: #1b1c1f;
+  --text-color:var(--grey);
+  --background: #282c34;
+  --light-grey: rgba(0, 0, 0, 0.14);
+  --light-grey-2: #bbb;
   /* typography */
   --text-size-xs: 0.56rem;
   --text-size-sm: 0.75rem;
@@ -28,21 +29,48 @@
   --text-size-3xl: 3.16rem;
   --text-size-4xl: 4.21rem;
   --text-size-5xl: 5.61rem;
+
 }
 /* classes */
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
 .w-full {
   width: 100%;
 }
-
-html.light {
-  --bg-color: var(--white);
-  --text-color: var(--black);
+.flex{
+  display: flex;
+  flex-wrap: wrap;
 }
-html.dark {
-  --bg-color: var(--black);
-  --text-color: var(--white);
+.flex-col{
+  flex-direction: column;
+}
+.gap-4{
+  gap:0.5rem;
+}
+.grid{
+  display: grid;
+}
+.cols-2{
+  grid-template-columns: repeat(2,1fr);
 }
 
+[data-theme="dark"] {
+  --bg-color: var(--background);
+  --bg-blockquote:var(--grey);
+  --text-color: var(--white);   
+  --border-color:1px solid var(--light-grey-2);
+  
+}
+[data-theme="light"] {
+  --bg-color: white;
+  --bg-blockquote:var(--light-grey);
+  --text-color: var(--grey); 
+  --border-color:1px solid var(--light-grey);  
+}
 html {
   font-size: 16px;
 }
@@ -51,8 +79,10 @@ body {
   font-family: "Ubuntu", serif;
   line-height: 1.65;
   font-style: normal;
-  color: var(--grey);
+  color: var(--text-color);
+  background:var(--bg-color);
 }
+
 a {
   color: var(--blue);
 }
@@ -71,7 +101,7 @@ h6 {
   font-weight: 300;
   line-height: 1.15;
   margin: 0;
-  margin-bottom:0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -105,16 +135,17 @@ input[type="button"] {
   height: 38px;
   display: inline-block;
   box-sizing: border-box;
-  border: 1px solid var(--light-grey-2);
+  border:var(--border-color);
   background: transparent;
-  color: var(--grey);
-  padding: 0 .5rem;
+  color:var(--text-color);
+  padding: 0 0.5rem;
   border-radius: 5px;
   font-size: var(--text-size-sm);
   line-height: 38px;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-decoration: none;
+  align-items: center;
   &:hover {
     cursor: pointer;
     border-color: var(--grey);
@@ -154,20 +185,40 @@ label {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 0.5rem 0 0.2rem 0;
+  margin-bottom: 0.5rem;
+
+}
+label input{
+  width:1rem;
 }
 input,
 textarea,
-select,datalist {
+select,
+datalist {
   border: 1px solid var(--light-grey-2);
-  background: white;
+  background:transparent;
   border-radius: 5px;
   padding: 0.5rem;
   outline: none;
-  color: var(--grey);
+  color: var(--text-color);
   font-family: "Ubuntu", serif;
   font-size: var(--text-size-md);
   margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+option{
+  background:var(--bg-color);
+}
+::placeholder{
+  color:var(--light-grey-2);
+}
+input[type="date"],
+input[type="file"]{
+  color:var(--light-grey-2);
+}
+input[type="email"],
+input[type="password"]{
+  width:100%;
 }
 input:focus,
 textarea:focus,
@@ -179,9 +230,8 @@ input[type="radio"] {
   margin: 0;
   cursor: pointer;
 }
-.colorpick-eyedropper-input-trigger
-{
-display: none;
+.colorpick-eyedropper-input-trigger {
+  display: none;
 }
 /* blockquote */
 blockquote:before {
@@ -195,6 +245,7 @@ blockquote {
   padding: 0.2rem 0.2rem 0.2rem 2rem;
   border-left: 1px solid var(--light-grey-2);
   background: var(--white);
+  background:var(--bg-blockquote);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   position: relative;
@@ -233,5 +284,3 @@ hr {
   border-left: none;
   border-right: none;
 }
-
-

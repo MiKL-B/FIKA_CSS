@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <h3>Button</h3>
-    <div class="flex">
+    <div class="flex gap-4">
       <button>Button</button>
       <button class="primary">Button</button>
       <button class="danger">Button</button>
@@ -15,7 +15,7 @@
 
 &lt;a class="button"&gt;Anchor&lt;/a&gt;
 &lt;input type="submit" value="submit input"/&gt;
-&lt;input type="submit" value="button input"/&gt;</code></pre>
+&lt;input type="button" value="button input"/&gt;</code></pre>
   </div>
 </template>
 <script>

@@ -8,9 +8,11 @@
         Créez des interfaces élégantes et épurées tout en vous concentrant sur
         l'essentiel : la logique de votre code.
       </p>
-      <div class="flex">
+      <div class="flex gap-4">
         <RouterLink to="/docs" class="button primary">Get started</RouterLink>
-        <a href="https://github.com/MiKL-B/" target="_blank" class="button">Github</a>
+        <a href="https://github.com/MiKL-B/" target="_blank" class="button"
+          >Github</a
+        >
         <a href="../assets/fika.css" class="button" download>Download</a>
       </div>
     </div>

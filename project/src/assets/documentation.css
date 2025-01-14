@@ -20,21 +20,18 @@
   padding: 1rem;
   color: var(--grey);
   overflow-x: auto;
+
+  tab-size:2;
+ color:var(--text-color);
+ border:var(--border-color);
 }
-button,
-input,
-a {
-  margin-bottom: 1rem;  
+code{
+  font-family: "Ubuntu", serif;
 }
 .separator-container {
   height: 200px;
 }
 
-.flex{
-  display: flex;
-  flex-wrap: wrap;
-  gap:0.5rem;
-}
 .router-link-exact-active{
   color:var(--violet);
 }

@@ -4,6 +4,7 @@
       <span>Get started</span>
       <RouterLink to="/docs">Introduction</RouterLink>
       <RouterLink to="/docs/installation">Installation</RouterLink>
+      <RouterLink to="/docs/theme">Theme</RouterLink>
       <RouterLink to="/docs/examples">Examples</RouterLink>
       <span>Components</span>
       <LinkCompo/>
@@ -68,13 +69,13 @@ export default {
 @media screen and (min-width: 768px) {
   .content {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 200px auto;
   }
   #menu-docs {
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
-    border-right: 1px solid var(--light-grey);
+    border-right: var(--border-color);
     height: 100%;
     overflow-y: auto;
     margin-top: 1rem;

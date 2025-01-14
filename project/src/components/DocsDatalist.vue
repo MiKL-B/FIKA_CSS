@@ -2,7 +2,7 @@
   <div class="section">
     <h3>Datalist</h3>
     <label for="browser">Choose your browser:</label>
-    <input list="browsers" name="browser" id="browser" />
+    <input list="browsers" name="browser" id="browser" placeholder="Enter text here..."/>
     <datalist id="browsers">
       <option value="Edge"></option>
       <option value="Firefox"></option>
