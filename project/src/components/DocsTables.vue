@@ -4,50 +4,62 @@
     <table class="w-full">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Sex</th>
-          <th>Location</th>
+          <th>Coffee Type</th>
+          <th>Description</th>
+          <th>Volume (ml)</th>
+          <th>Price ($)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Dave Gamache</td>
-          <td>26</td>
-          <td>Male</td>
-          <td>San Francisco</td>
+          <td>Café Latte</td>
+          <td>Espresso with steamed milk.</td>
+          <td>240</td>
+          <td>4.50</td>
         </tr>
         <tr>
-          <td>Dwayne Johnson</td>
-          <td>42</td>
-          <td>Male</td>
-          <td>Hayward</td>
+          <td>Macchiato</td>
+          <td>Espresso with a touch of milk.</td>
+          <td>120</td>
+          <td>3.50</td>
+        </tr>
+        <tr>
+          <td>Cappuccino</td>
+          <td>Espresso with milk foam.</td>
+          <td>240</td>
+          <td>4.00</td>
         </tr>
       </tbody>
     </table>
     <pre class="code-example"><code>&lt;table class=&quot;w-full&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Age&lt;/th&gt;
-      &lt;th&gt;Sex&lt;/th&gt;
-      &lt;th&gt;Location&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Dave Gamache&lt;/td&gt;
-      &lt;td&gt;26&lt;/td&gt;
-      &lt;td&gt;Male&lt;/td&gt;
-      &lt;td&gt;San Francisco&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Dwayne Johnson&lt;/td&gt;
-      &lt;td&gt;42&lt;/td&gt;
-      &lt;td&gt;Male&lt;/td&gt;
-      &lt;td&gt;Hayward&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Coffee Type&lt;/th&gt;
+    &lt;th&gt;Description&lt;/th&gt;
+    &lt;th&gt;Volume (ml)&lt;/th&gt;
+    &lt;th&gt;Price ($)&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Caf&eacute; Latte&lt;/td&gt;
+    &lt;td&gt;Espresso with steamed milk.&lt;/td&gt;
+    &lt;td&gt;240&lt;/td&gt;
+    &lt;td&gt;4.50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Macchiato&lt;/td&gt;
+    &lt;td&gt;Espresso with a touch of milk.&lt;/td&gt;
+    &lt;td&gt;120&lt;/td&gt;
+    &lt;td&gt;3.50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Cappuccino&lt;/td&gt;
+    &lt;td&gt;Espresso with milk foam.&lt;/td&gt;
+    &lt;td&gt;240&lt;/td&gt;
+    &lt;td&gt;4.00&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
   </div>
 </template>
