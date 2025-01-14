@@ -1,17 +1,12 @@
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.container-docs{
-  padding: 0 20px;
+.container-docs {
+  padding: 0 1rem;
 }
 .top-section {
   padding: 10rem 0;
 }
 .section {
-  padding-top:1rem;
-  padding-bottom:4rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
 
 .code-example {
@@ -21,19 +16,19 @@
   color: var(--grey);
   overflow-x: auto;
 
-  tab-size:2;
- color:var(--text-color);
- border:var(--border-color);
+  tab-size: 2;
+  color: var(--text-color);
+  border: var(--border-color);
 }
-code{
+code {
   font-family: "Ubuntu", serif;
 }
 .separator-container {
   height: 200px;
 }
 
-.router-link-exact-active{
-  color:var(--violet);
+.router-link-exact-active {
+  color: var(--violet);
 }
 @media screen and (min-width: 400px) {
   .container {
@@ -41,18 +36,17 @@ code{
     padding: 0;
   }
 }
-.display-mobile{
+.display-mobile {
   display: block;
 }
-.display-desktop{
+.display-desktop {
   display: none;
 }
-@media screen and (min-width:768px)
-{
-  .display-mobile{
+@media screen and (min-width: 768px) {
+  .display-mobile {
     display: none;
   }
-  .display-desktop{
+  .display-desktop {
     display: block;
   }
 }

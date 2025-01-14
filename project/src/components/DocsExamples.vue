@@ -4,7 +4,7 @@
     <h4>Form</h4>
     <form class="form-example">
       <div class="grid cols-2 gap-4">
-        <div class="">
+        <div class="field">
           <label for="name">Name</label>
           <input type="name" placeholder="John Doe" />
         </div>
@@ -36,8 +36,7 @@ export default {
 <style>
 .form-example {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  width: 450px;
 }
-
 </style>

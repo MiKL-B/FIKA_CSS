@@ -4,46 +4,50 @@
       <span>☕</span>
       <RouterLink to="/">Fika CSS</RouterLink>
     </div>
-    <span @click="toggleTheme" aria-label="Toggle themes">
-      <svg
-        v-if="theme === 'light'"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        style="color: var(--blue)"
-      >
-        <circle cx="12" cy="12" r="4" />
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
-      </svg>
-      <svg
-        v-else
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        style="color: var(--yellow)"
-      >
-        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-      </svg>
-    </span>
+    <div id="nav-desktop-right">
+      <RouterLink to="/contact">Contact</RouterLink>
+      <RouterLink to="/changelog">Changelog</RouterLink>
+      <span @click="toggleTheme" aria-label="Toggle themes">
+        <svg
+          v-if="theme === 'light'"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="color: var(--blue)"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2" />
+          <path d="M12 20v2" />
+          <path d="m4.93 4.93 1.41 1.41" />
+          <path d="m17.66 17.66 1.41 1.41" />
+          <path d="M2 12h2" />
+          <path d="M20 12h2" />
+          <path d="m6.34 17.66-1.41 1.41" />
+          <path d="m19.07 4.93-1.41 1.41" />
+        </svg>
+        <svg
+          v-else
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="color: var(--yellow)"
+        >
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+        </svg>
+      </span>
+    </div>
   </nav>
   <!-- mobile -->
   <nav id="nav-mobile">
@@ -52,7 +56,6 @@
       <RouterLink to="/">Fika CSS</RouterLink>
     </div>
     <div class="bars-container">
-
       <span @click="toggleTheme" aria-label="Toggle themes">
         <svg
           v-if="theme === 'light'"
@@ -153,9 +156,17 @@
       class="link-doc"
       >Examples</RouterLink
     >
+
     <span>Components</span>
 
     <LinkCompo @child-click="isMenuMobileOpen = false" />
+    <span>About</span>
+    <RouterLink to="/contact" @click="isMenuMobileOpen = false"
+      >Contact</RouterLink
+    >
+    <RouterLink to="/changelog" @click="isMenuMobileOpen = false"
+      >Changelog</RouterLink
+    >
   </div>
 
   <RouterView />
@@ -234,11 +245,11 @@ nav a {
 #menu-mobile a {
   margin: 0;
 }
-.bars-container{
+.bars-container {
   z-index: 9999;
 }
 .bars {
-  z-index: 9999 ;
+  z-index: 9999;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -247,7 +258,12 @@ nav a {
     justify-content: space-between;
     line-height: 100%;
   }
-  #nav-desktop svg{
+  #nav-desktop-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #nav-desktop svg {
     cursor: pointer;
   }
   #nav-mobile {

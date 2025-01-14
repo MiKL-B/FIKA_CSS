@@ -1,6 +1,7 @@
 <template>
   <div class="content">
     <div id="menu-docs" class="display-desktop">
+      <!-- <input type="search" placeholder="Quick search..."> -->
       <span>Get started</span>
       <RouterLink to="/docs">Introduction</RouterLink>
       <RouterLink to="/docs/installation">Installation</RouterLink>
@@ -17,7 +18,7 @@
           }}</router-link>
           <span v-else>{{ route.title }}</span>
           <!-- Si c'est la dernière route, on affiche sans lien -->
-          <span v-if="index < breadcrumbs.length - 1" class="chevron">-</span>
+          <span v-if="index < breadcrumbs.length - 1" class="chevron">/</span>
         </li>
       </ul>
       <RouterView class="container-docs" />
@@ -74,7 +75,7 @@ export default {
   #menu-docs {
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
+    padding:0 1rem;
     border-right: var(--border-color);
     height: 100%;
     overflow-y: auto;

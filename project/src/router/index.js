@@ -16,6 +16,9 @@ import DocsTables from '@/components/DocsTables.vue'
 import DocsTextarea from '@/components/DocsTextarea.vue'
 import DocsIntroduction from '@/components/DocsIntroduction.vue'
 import DocsTheme from '@/components/DocsTheme.vue'
+import ContactView from '@/views/ContactView.vue'
+import ChangelogView from '@/views/ChangelogView.vue'
+import NotFoundCompo from '@/components/NotFoundCompo.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -24,6 +27,21 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
 
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactView,
+    },
+    {
+      path: '/changelog',
+      name: 'changelog',
+      component: ChangelogView,
+    },
+    {
+      path: '/:catchAll(.*)', // Cela capturera toutes les routes non définies
+      name: 'NotFoundCompo',
+      component: NotFoundCompo,
     },
     {
       path: '/docs',

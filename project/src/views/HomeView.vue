@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <div class="top-section">
       <h1>Fika CSS</h1>
       <p>
@@ -13,7 +13,7 @@
         <a href="https://github.com/MiKL-B/" target="_blank" class="button"
           >Github</a
         >
-        <a href="../assets/fika.css" class="button" download>Download</a>
+        <a href="/assets/fika.css" class="button" download>Download</a>
       </div>
     </div>
   </div>
