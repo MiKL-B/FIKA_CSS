@@ -47,6 +47,12 @@
 .flex-col {
   flex-direction: column;
 }
+.justify-between{
+  justify-content: space-between;
+}
+.justify-end{
+  justify-content: flex-end;
+}
 .gap-4 {
   gap: 0.5rem;
 }
@@ -55,6 +61,21 @@
 }
 .cols-2 {
   grid-template-columns: repeat(2, 1fr);
+}
+.p-4{
+  padding:1rem;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.capitalize{
+  text-transform: capitalize;
 }
 .container {
   max-width: 960px;
@@ -206,10 +227,7 @@ button[disabled] {
   }
 }
 /* forms */
-.field {
-  display: flex;
-  flex-direction: column;
-}
+
 label {
   font-weight: 600;
   display: flex;
@@ -245,10 +263,7 @@ input[type="date"],
 input[type="file"] {
   color: var(--light-grey-2);
 }
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-}
+
 input:focus,
 textarea:focus,
 select:focus {

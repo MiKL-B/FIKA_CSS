@@ -134,39 +134,7 @@
     </div>
   </nav>
   <div id="menu-mobile" v-if="isMenuMobileOpen && windowWidth < 768">
-    <span>Get started</span>
-    <RouterLink @click="isMenuMobileOpen = false" to="/docs" class="link-doc"
-      >Introduction</RouterLink
-    >
-    <RouterLink
-      @click="isMenuMobileOpen = false"
-      to="/docs/installation"
-      class="link-doc"
-      >Installation</RouterLink
-    >
-    <RouterLink
-      @click="isMenuMobileOpen = false"
-      to="/docs/theme"
-      class="link-doc"
-      >Theme</RouterLink
-    >
-    <RouterLink
-      @click="isMenuMobileOpen = false"
-      to="/docs/examples"
-      class="link-doc"
-      >Examples</RouterLink
-    >
-
-    <span>Components</span>
-
     <LinkCompo @child-click="isMenuMobileOpen = false" />
-    <span>About</span>
-    <RouterLink to="/contact" @click="isMenuMobileOpen = false"
-      >Contact</RouterLink
-    >
-    <RouterLink to="/changelog" @click="isMenuMobileOpen = false"
-      >Changelog</RouterLink
-    >
   </div>
 
   <RouterView />

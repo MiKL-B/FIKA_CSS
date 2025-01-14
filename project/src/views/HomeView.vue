@@ -3,10 +3,10 @@
     <div class="top-section">
       <h1>Fika CSS</h1>
       <p>
-        Découvrez le framework minimaliste idéal pour vos sessions de code chill
-        dans un café, accompagné d'un bon café et de délicieuses pâtisseries.
-        Créez des interfaces élégantes et épurées tout en vous concentrant sur
-        l'essentiel : la logique de votre code.
+        Discover the ideal minimalist framework for your chill code sessions in
+        a coffee shop, with a good coffee and delicious pastries. Create elegant
+        and clean interfaces while focusing on the essential: the logic of your
+        code.
       </p>
       <div class="flex gap-4">
         <RouterLink to="/docs" class="button primary">Get started</RouterLink>
