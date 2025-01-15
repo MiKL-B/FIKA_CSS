@@ -1,6 +1,7 @@
 <template>
   <div class="section">
-    <h3>Heading</h3>
+    <h3>Typography</h3>
+    <h4>Heading</h4>
     <h1>Heading</h1>
     <h2>Heading</h2>
     <h3>Heading</h3>
@@ -16,8 +17,7 @@
 &lt;h6&gt;Heading&lt;/h6&gt;</code></pre>
 
     <!-- link -->
-
-    <h3>Link</h3>
+    <h4>Link</h4>
     <a href="#">Link</a>
     <pre
       class="code-example"

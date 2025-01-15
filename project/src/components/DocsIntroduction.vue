@@ -19,9 +19,9 @@
     <details>
       <summary>Is the framework responsive?</summary>
       <p>
-        Yes, the framework is responsive. It includes a grid system flexible and
-        adaptive components that ensure your site displays correctly on all
-        devices, from smartphones to desktop computers.
+        Yes, the framework is responsive. It includes adaptive components that
+        ensure your site displays correctly on all devices, from smartphones to
+        desktop computers.
       </p>
     </details>
     <details>
@@ -47,7 +47,6 @@
         installation method.
       </p>
     </details>
-
   </div>
 </template>
 

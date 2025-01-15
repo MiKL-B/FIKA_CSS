@@ -20,7 +20,9 @@ import ContactView from '@/views/ContactView.vue'
 import ChangelogView from '@/views/ChangelogView.vue'
 import NotFoundCompo from '@/components/NotFoundCompo.vue'
 import DocsBreadcrumb from '@/components/DocsBreadcrumb.vue'
-import DocsUtilities from '@/components/DocsUtilities.vue'
+import DocsMediaqueries from '@/components/DocsMediaqueries.vue'
+import DocsClasses from '@/components/DocsClasses.vue'
+import DocsGrid from '@/components/DocsGrid.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -67,10 +69,22 @@ const router = createRouter({
           meta:{title:"Installation"},
         },
         {
-          path: 'utilities',
-          name:"DocsUtilities",
-          component: DocsUtilities,
-          meta:{title:"Utilities"},
+          path: 'classes',
+          name:"DocsClasses",
+          component: DocsClasses,
+          meta:{title:"Classes"},
+        },
+        {
+          path: 'grid',
+          name:"DocsGrid",
+          component: DocsGrid,
+          meta:{title:"Grid"},
+        },
+        {
+          path: 'mediaqueries',
+          name:"DocsMediaqueries",
+          component: DocsMediaqueries,
+          meta:{title:"Media queries"},
         },
         {
           path: 'theme',

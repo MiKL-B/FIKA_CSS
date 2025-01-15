@@ -1,21 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
-@import "./documentation.css";
 
 :root {
   --grey: #5a6374;
-  --shadow: #5a637444;
   --red: #e06c75;
   --green: #98c379;
   --yellow: #e5c07b;
   --brown: #8b572a;
   --blue: #61afef;
   --violet: #c678dd;
-  --brain: #fc76a3;
-  --cyan: #56b6c2;
-  --black: #000000;
   --white: #f2f2f2;
-  --bg-body: #1b1c1f;
-  --text-color:var(--grey);
+  --text-color: var(--grey);
   --background: #282c34;
   --light-grey: rgba(0, 0, 0, 0.14);
   --light-grey-2: #bbb;
@@ -29,47 +23,29 @@
   --text-size-3xl: 3.16rem;
   --text-size-4xl: 4.21rem;
   --text-size-5xl: 5.61rem;
-
 }
 /* classes */
-.w-25 {
-  width: 25%;
-}
-.w-50 {
-  width: 50%;
-}
 .w-full {
   width: 100%;
-}
-.flex{
-  display: flex;
-  flex-wrap: wrap;
-}
-.flex-col{
-  flex-direction: column;
-}
-.gap-4{
-  gap:0.5rem;
-}
-.grid{
-  display: grid;
-}
-.cols-2{
-  grid-template-columns: repeat(2,1fr);
+  box-sizing: border-box;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 [data-theme="dark"] {
   --bg-color: var(--background);
-  --bg-blockquote:var(--grey);
-  --text-color: var(--white);   
-  --border-color:1px solid var(--light-grey-2);
-  
+  --bg-blockquote: var(--grey);
+  --text-color: var(--white);
+  --border-color: 1px solid var(--light-grey-2);
 }
 [data-theme="light"] {
   --bg-color: white;
-  --bg-blockquote:var(--light-grey);
-  --text-color: var(--grey); 
-  --border-color:1px solid var(--light-grey);  
+  --bg-blockquote: var(--light-grey);
+  --text-color: var(--grey);
+  --border-color: 1px solid var(--light-grey);
 }
 html {
   font-size: 16px;
@@ -80,11 +56,65 @@ body {
   line-height: 1.65;
   font-style: normal;
   color: var(--text-color);
-  background:var(--bg-color);
+  background: var(--bg-color);
+}
+nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: var(--border-color);
+}
+nav a {
+  margin: 0;
+}
+a,
+a.primary {
+  color: var(--blue);
 }
 
-a {
+p.primary,
+span.primary,
+h1.primary,
+h2.primary,
+h3.primary,
+h4.primary,
+h5.primary,
+h6.primary {
   color: var(--blue);
+}
+a.success,
+p.success,
+span.success,
+h1.success,
+h2.success,
+h3.success,
+h4.success,
+h5.success,
+h6.success {
+  color: var(--green);
+}
+a.warning,
+p.warning,
+span.warning,
+h1.warning,
+h2.warning,
+h3.warning,
+h4.warning,
+h5.warning,
+h6.warning {
+  color: var(--yellow);
+}
+a.danger,
+p.danger,
+span.danger,
+h1.danger,
+h2.danger,
+h3.danger,
+h4.danger,
+h5.danger,
+h6.danger {
+  color: var(--red);
 }
 p {
   font-size: var(--text-size-md);
@@ -105,8 +135,6 @@ h6 {
 }
 
 h1 {
-  font-family: "Ubuntu", serif;
-  margin-top: 0;
   font-size: var(--text-size-4xl);
 }
 
@@ -131,13 +159,14 @@ h6 {
 button,
 a.button,
 input[type="submit"],
-input[type="button"] {
+input[type="button"],
+input[type="reset"] {
   height: 38px;
   display: inline-block;
   box-sizing: border-box;
-  border:var(--border-color);
+  border: var(--border-color);
   background: transparent;
-  color:var(--text-color);
+  color: var(--text-color);
   padding: 0 0.5rem;
   border-radius: 5px;
   font-size: var(--text-size-sm);
@@ -174,29 +203,51 @@ a.button.danger {
     border-color: var(--red);
   }
 }
-
-/* forms */
-.field {
-  display: flex;
-  flex-direction: column;
+button.success,
+a.button.success {
+  background: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+  &:hover {
+    opacity: 0.9;
+    border-color: var(--green);
+  }
 }
+button.warning,
+a.button.warning {
+  background: var(--yellow);
+  color: var(--white);
+  border-color: var(--yellow);
+  &:hover {
+    opacity: 0.9;
+    border-color: var(--yellow);
+  }
+}
+button[disabled] {
+  color: var(--light-grey-2);
+  &:hover {
+    cursor: not-allowed;
+    border: var(--border-color);
+  }
+}
+/* forms */
+
 label {
   font-weight: 600;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
-
 }
-label input{
-  width:1rem;
+label input {
+  width: 1rem;
 }
 input,
 textarea,
 select,
 datalist {
   border: 1px solid var(--light-grey-2);
-  background:transparent;
+  background: transparent;
   border-radius: 5px;
   padding: 0.5rem;
   outline: none;
@@ -206,20 +257,17 @@ datalist {
   margin-bottom: 0.5rem;
   box-sizing: border-box;
 }
-option{
-  background:var(--bg-color);
+option {
+  background: var(--bg-color);
 }
-::placeholder{
-  color:var(--light-grey-2);
+::placeholder {
+  color: var(--light-grey-2);
 }
 input[type="date"],
-input[type="file"]{
-  color:var(--light-grey-2);
+input[type="file"] {
+  color: var(--light-grey-2);
 }
-input[type="email"],
-input[type="password"]{
-  width:100%;
-}
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -245,20 +293,20 @@ blockquote {
   padding: 0.2rem 0.2rem 0.2rem 2rem;
   border-left: 1px solid var(--light-grey-2);
   background: var(--white);
-  background:var(--bg-blockquote);
+  background: var(--bg-blockquote);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   position: relative;
 }
-/* lists */
+
 /* tables */
 table {
   border-collapse: collapse;
+  overflow-x: auto;
 }
 th,
 td {
   text-align: left;
-  padding: 1rem 1rem 1rem 0;
   border-bottom: 1px solid var(--light-grey-2);
 }
 /* details */
@@ -283,4 +331,17 @@ hr {
   border-bottom: none;
   border-left: none;
   border-right: none;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+/* breadcrumb */
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  padding: 0 20px;
+  margin: 1rem 0 0 0;
+}
+.breadcrumb li:not(:first-child)::before {
+  content: "/";
+  margin: 0.5em;
 }

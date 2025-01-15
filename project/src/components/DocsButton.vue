@@ -15,7 +15,7 @@
 &lt;input type=&quot;button&quot; value=&quot;button&quot; /&gt;
 &lt;input type=&quot;submit&quot; value=&quot;submit&quot; /&gt;
 &lt;input type=&quot;reset&quot; value=&quot;reset&quot;/&gt;</code></pre>
-    <h4>Colors</h4>
+    <h4>Color</h4>
     <div class="flex gap-4">
       <button class="primary">Primary</button>
       <button class="success">Success</button>

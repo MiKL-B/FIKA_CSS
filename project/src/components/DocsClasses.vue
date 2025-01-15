@@ -6,12 +6,13 @@
   width: 100%;
   box-sizing: border-box;
 }</code></pre>
-  <p>Other classes will be available later.</p>
+
+    <p>Other classes will be available later.</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "DocsUtilities",
+  name: "DocsClasses",
 };
 </script>

@@ -36,7 +36,8 @@
 
   &lt;input type=&quot;submit&quot; value=&quot;submit&quot; class=&quot;button primary w-full&quot; /&gt;
 &lt;/form&gt;</code></pre>
-<p>Other examples will be available later.</p>
+    <p>Other examples will be available later.</p>
+
   </div>
 </template>
 

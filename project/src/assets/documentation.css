@@ -50,3 +50,49 @@ code {
     display: block;
   }
 }
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.gap-4 {
+  gap: 0.5rem;
+}
+.grid {
+  display: grid;
+}
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.p-4 {
+  padding: 1rem;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.col{
+  background: var(--bg-blockquote);
+}

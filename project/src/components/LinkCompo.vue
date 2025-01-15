@@ -21,7 +21,6 @@ export default {
           links: [
             { name: "introduction", url: "/docs" },
             { name: "installation", url: "/docs/installation" },
-            { name: "utilities", url: "/docs/utilities" },
             { name: "theme", url: "/docs/theme" },
             { name: "examples", url: "/docs/examples" },
           ],
@@ -43,6 +42,14 @@ export default {
             { name: "textarea", url: "/docs/textarea" },
             { name: "typography", url: "/docs/typography" },
           ],
+        },
+        {
+          title:"Utilities",
+          links:[
+            {name:"classes",url:"/docs/classes"},
+            {name:"grid",url:"/docs/grid"},
+            {name:"media queries",url:"/docs/mediaqueries"},
+          ]
         },
         {
           title: "About",
