@@ -21,6 +21,7 @@ export default {
           links: [
             { name: "introduction", url: "/docs" },
             { name: "installation", url: "/docs/installation" },
+            { name: "utilities", url: "/docs/utilities" },
             { name: "theme", url: "/docs/theme" },
             { name: "examples", url: "/docs/examples" },
           ],

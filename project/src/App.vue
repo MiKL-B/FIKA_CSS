@@ -181,16 +181,7 @@ export default {
 };
 </script>
 <style>
-nav {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  padding: 1rem;
-  border-bottom: var(--border-color);
-}
-nav a {
-  margin: 0;
-}
+
 #nav-desktop {
   display: none;
 }

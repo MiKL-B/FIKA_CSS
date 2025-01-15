@@ -20,6 +20,7 @@ import ContactView from '@/views/ContactView.vue'
 import ChangelogView from '@/views/ChangelogView.vue'
 import NotFoundCompo from '@/components/NotFoundCompo.vue'
 import DocsBreadcrumb from '@/components/DocsBreadcrumb.vue'
+import DocsUtilities from '@/components/DocsUtilities.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -64,6 +65,12 @@ const router = createRouter({
           name:"DocsInstallation",
           component: DocsInstallation,
           meta:{title:"Installation"},
+        },
+        {
+          path: 'utilities',
+          name:"DocsUtilities",
+          component: DocsUtilities,
+          meta:{title:"Utilities"},
         },
         {
           path: 'theme',

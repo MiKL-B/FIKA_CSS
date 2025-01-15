@@ -37,8 +37,10 @@
 .w-50 {
   width: 50%;
 }
+/* width */
 .w-full {
   width: 100%;
+  box-sizing: border-box;
 }
 .flex {
   display: flex;
@@ -47,10 +49,10 @@
 .flex-col {
   flex-direction: column;
 }
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
-.justify-end{
+.justify-end {
   justify-content: flex-end;
 }
 .gap-4 {
@@ -62,19 +64,19 @@
 .cols-2 {
   grid-template-columns: repeat(2, 1fr);
 }
-.p-4{
-  padding:1rem;
+.p-4 {
+  padding: 1rem;
 }
-.text-left{
+.text-left {
   text-align: left;
 }
-.text-right{
+.text-right {
   text-align: right;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
-.capitalize{
+.capitalize {
   text-transform: capitalize;
 }
 .container {
@@ -87,7 +89,6 @@
   --bg-blockquote: var(--grey);
   --text-color: var(--white);
   --border-color: 1px solid var(--light-grey-2);
-
 }
 [data-theme="light"] {
   --bg-color: white;
@@ -106,9 +107,62 @@ body {
   color: var(--text-color);
   background: var(--bg-color);
 }
-
+nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: var(--border-color);
+}
+nav a {
+  margin: 0;
+}
 a {
   color: var(--blue);
+}
+a.primary,
+p.primary,
+span.primary,
+h1.primary,
+h2.primary,
+h3.primary,
+h4.primary,
+h5.primary,
+h6.primary {
+  color: var(--blue);
+}
+a.success,
+p.success,
+span.success,
+h1.success,
+h2.success,
+h3.success,
+h4.success,
+h5.success,
+h6.success {
+  color: var(--green);
+}
+a.warning,
+p.warning,
+span.warning,
+h1.warning,
+h2.warning,
+h3.warning,
+h4.warning,
+h5.warning,
+h6.warning {
+  color: var(--yellow);
+}
+a.danger,
+p.danger,
+span.danger,
+h1.danger,
+h2.danger,
+h3.danger,
+h4.danger,
+h5.danger,
+h6.danger {
+  color: var(--red);
 }
 p {
   font-size: var(--text-size-md);
@@ -223,7 +277,7 @@ button[disabled] {
   color: var(--light-grey-2);
   &:hover {
     cursor: not-allowed;
-    border:var(--border-color);
+    border: var(--border-color);
   }
 }
 /* forms */
@@ -327,6 +381,8 @@ hr {
   border-bottom: none;
   border-left: none;
   border-right: none;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
 }
 /* breadcrumb */
 .breadcrumb {
@@ -335,7 +391,7 @@ hr {
   padding: 0 20px;
   margin: 1rem 0 0 0;
 }
-.breadcrumb li:not(:first-child)::before{
-  content:"/";
+.breadcrumb li:not(:first-child)::before {
+  content: "/";
   margin: 0.5em;
 }

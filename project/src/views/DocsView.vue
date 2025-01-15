@@ -22,9 +22,12 @@
           >{{ getPreviousName() }}</RouterLink
         >
         <span v-else></span>
-        <RouterLink :to="getNextLink()" v-if="getNextLink()" class="text-right">{{
-          getNextName()
-        }}</RouterLink>
+        <RouterLink
+          :to="getNextLink()"
+          v-if="getNextLink()"
+          class="text-right"
+          >{{ getNextName() }}</RouterLink
+        >
         <span v-else></span>
       </div>
     </div>
@@ -45,6 +48,7 @@ export default {
           links: [
             { name: "introduction", url: "/docs" },
             { name: "installation", url: "/docs/installation" },
+            { name: "utilities", url: "/docs/utilities" },
             { name: "theme", url: "/docs/theme" },
             { name: "examples", url: "/docs/examples" },
           ],
@@ -175,7 +179,6 @@ export default {
   #menu-docs {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
     border-right: var(--border-color);
     height: 100%;
     overflow-y: auto;
@@ -185,5 +188,4 @@ export default {
     margin: 0;
   }
 }
-
 </style>
