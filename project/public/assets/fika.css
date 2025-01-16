@@ -15,16 +15,7 @@
   --background: #282c34;
   --light-grey: rgba(0, 0, 0, 0.14);
   --light-grey-2: #bbb;
-  /* typography */
-  --text-size-xs: 0.56rem;
-  --text-size-sm: 0.75rem;
-  --text-size-md: 1rem;
-  --text-size-lg: 1.33rem;
-  --text-size-xl: 1.78rem;
-  --text-size-2xl: 2.37rem;
-  --text-size-3xl: 3.16rem;
-  --text-size-4xl: 4.21rem;
-  --text-size-5xl: 5.61rem;
+  --light-grey-3: #757575;
 }
 /* classes */
 .w-full {
@@ -37,9 +28,7 @@
   gap: 1rem;
 }
 
-.col {
-  text-align: center;
-}
+
 .col-1 {
   width: 8.33%;
 }
@@ -133,59 +122,33 @@ nav {
 nav a {
   margin: 0;
 }
-a,
-a.primary {
-  color: var(--blue);
-}
 
+a,
+a.primary,
 p.primary,
-span.primary,
-h1.primary,
-h2.primary,
-h3.primary,
-h4.primary,
-h5.primary,
-h6.primary {
+span.primary{
   color: var(--blue);
 }
 a.success,
 p.success,
-span.success,
-h1.success,
-h2.success,
-h3.success,
-h4.success,
-h5.success,
-h6.success {
+span.success {
   color: var(--green);
 }
 a.warning,
 p.warning,
-span.warning,
-h1.warning,
-h2.warning,
-h3.warning,
-h4.warning,
-h5.warning,
-h6.warning {
+span.warning{
   color: var(--yellow);
 }
 a.danger,
 p.danger,
-span.danger,
-h1.danger,
-h2.danger,
-h3.danger,
-h4.danger,
-h5.danger,
-h6.danger {
+span.danger {
   color: var(--red);
 }
+
 p {
-  font-size: var(--text-size-md);
+  font-size: 1rem;
   margin: 0 0 0.5rem 0;
 }
-
 h1,
 h2,
 h3,
@@ -200,26 +163,45 @@ h6 {
 }
 
 h1 {
-  font-size: var(--text-size-4xl);
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: var(--text-size-3xl);
+  font-size: 2.1rem;
 }
 
 h3 {
-  font-size: var(--text-size-2xl);
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: var(--text-size-xl);
+  font-size: 1.25rem;
 }
 
-h5,
+h5 {
+  font-size: 1.15rem;
+}
+
 h6 {
-  font-size: var(--text-size-lg);
+  font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
 
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+  }
+}
 /* button */
 button,
 a.button,
@@ -234,7 +216,7 @@ input[type="reset"] {
   color: var(--text-color);
   padding: 0 0.5rem;
   border-radius: 5px;
-  font-size: var(--text-size-sm);
+  font-size: 0.75rem;
   line-height: 38px;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -268,26 +250,7 @@ a.button.danger {
     border-color: var(--red);
   }
 }
-button.success,
-a.button.success {
-  background: var(--green);
-  color: var(--white);
-  border-color: var(--green);
-  &:hover {
-    opacity: 0.9;
-    border-color: var(--green);
-  }
-}
-button.warning,
-a.button.warning {
-  background: var(--yellow);
-  color: var(--white);
-  border-color: var(--yellow);
-  &:hover {
-    opacity: 0.9;
-    border-color: var(--yellow);
-  }
-}
+
 button[disabled] {
   color: var(--light-grey-2);
   &:hover {
@@ -296,7 +259,6 @@ button[disabled] {
   }
 }
 /* forms */
-
 label {
   font-weight: 600;
   display: flex;
@@ -318,7 +280,7 @@ datalist {
   outline: none;
   color: var(--text-color);
   font-family: "Ubuntu", serif;
-  font-size: var(--text-size-md);
+  font-size: 1.15rem;
   margin-bottom: 0.5rem;
   box-sizing: border-box;
 }
@@ -332,11 +294,13 @@ input[type="date"],
 input[type="file"] {
   color: var(--light-grey-2);
 }
-
+input[type="file"]{
+  font-size:0.96rem;
+}
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--grey);
+  border-color: var(--blue);
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -351,7 +315,7 @@ blockquote:before {
   content: open-quote;
   position: absolute;
   left: 1rem;
-  font-size: var(--text-size-md);
+  font-size: 1.15rem;
 }
 blockquote {
   margin: 0;
@@ -410,18 +374,35 @@ hr {
   content: "/";
   margin: 0.5em;
 }
-/* section */
 
-section{
-  padding:3rem 1.5rem;
+/* section */
+section {
+  padding: 3rem 1.5rem;
   margin-bottom: 1rem;
+  border-top:var(--border-color);
+  border-bottom:var(--border-color);
 }
-section.medium{
-  padding:3rem;
+section.medium {
+  padding: 3rem;
 }
-section.desktop{
-  padding:9rem 4.5rem;
+section.desktop {
+  padding: 9rem 4.5rem;
 }
-section.large{
-  padding:18rem 6rem;
+section.large {
+  padding: 18rem 6rem;
+}
+
+/* image */
+img{
+  max-width: 100%;
+  height:auto;
+  border-radius: 5px;
+
+}
+
+figure{
+  margin:0;
+}
+figcaption{
+  text-align: center;
 }

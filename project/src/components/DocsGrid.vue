@@ -3,56 +3,56 @@
       <h3>Grid</h3>
     <div class="container">
       <div class="row">
-        <div class="col col-0">col-0</div>
-        <div class="col col-12">col-12</div>
+        <div class="col-docs col col-0">col-0</div>
+        <div class="col-docs col col-12">col-12</div>
       </div>
       <div class="row">
-        <div class="col col-1">col-1</div>
-        <div class="col col-11">col-11</div>
+        <div class="col-docs col col-1">col-1</div>
+        <div class="col-docs col col-11">col-11</div>
       </div>
       <div class="row">
-        <div class="col col-2">col-2</div>
-        <div class="col col-10">col-10</div>
+        <div class="col-docs col col-2">col-2</div>
+        <div class="col-docs col col-10">col-10</div>
       </div>
       <div class="row">
-        <div class="col col-3">col-3</div>
-        <div class="col col-9">col-9</div>
+        <div class="col-docs col col-3">col-3</div>
+        <div class="col-docs col col-9">col-9</div>
       </div>
       <div class="row">
-        <div class="col col-4">col-4</div>
-        <div class="col col-8">col-8</div>
+        <div class="col-docs col col-4">col-4</div>
+        <div class="col-docs col col-8">col-8</div>
       </div>
       <div class="row">
-        <div class="col col-5">col-5</div>
-        <div class="col col-7">col-7</div>
+        <div class="col-docs col col-5">col-5</div>
+        <div class="col-docs col col-7">col-7</div>
       </div>
       <div class="row">
-        <div class="col col-6">col-6</div>
-        <div class="col col-6">col-6</div>
+        <div class="col-docs col col-6">col-6</div>
+        <div class="col-docs col col-6">col-6</div>
       </div>
       <div class="row">
-        <div class="col col-7">col-7</div>
-        <div class="col col-5">col-5</div>
+        <div class="col-docs col col-7">col-7</div>
+        <div class="col-docs col col-5">col-5</div>
       </div>
       <div class="row">
-        <div class="col col-8">col-8</div>
-        <div class="col col-4">col-4</div>
+        <div class="col-docs col col-8">col-8</div>
+        <div class="col-docs col col-4">col-4</div>
       </div>
       <div class="row">
-        <div class="col col-9">col-9</div>
-        <div class="col col-3">col-3</div>
+        <div class="col-docs col col-9">col-9</div>
+        <div class="col-docs col col-3">col-3</div>
       </div>
       <div class="row">
-        <div class="col col-10">col-10</div>
-        <div class="col col-2">col-2</div>
+        <div class="col-docs col col-10">col-10</div>
+        <div class="col-docs col col-2">col-2</div>
       </div>
       <div class="row">
-        <div class="col col-11">col-11</div>
-        <div class="col col-1">col-1</div>
+        <div class="col-docs col col-11">col-11</div>
+        <div class="col-docs col col-1">col-1</div>
       </div>
       <div class="row">
-        <div class="col col-12">col-12</div>
-        <div class="col col-0">col-0</div>
+        <div class="col-docs col col-12">col-12</div>
+        <div class="col-docs col col-0">col-0</div>
       </div>
     </div>
     <pre class="code-example"><code>&lt;div class=&quot;container&quot;&gt;

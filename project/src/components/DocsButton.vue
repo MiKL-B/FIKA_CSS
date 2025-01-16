@@ -18,13 +18,9 @@
     <h4>Color</h4>
     <div class="flex gap-4">
       <button class="primary">Primary</button>
-      <button class="success">Success</button>
-      <button class="warning">Warning</button>
       <button class="danger">Danger</button>
     </div>
     <pre class="code-example"><code>&lt;button class=&quot;primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;success&quot;&gt;Success&lt;/button&gt;
-&lt;button class=&quot;warning&quot;&gt;Warning&lt;/button&gt;
 &lt;button class=&quot;danger&quot;&gt;Danger&lt;/button&gt;</code></pre>
     <h4>Display</h4>
     <button class="w-full">Full width</button>

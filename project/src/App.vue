@@ -98,7 +98,7 @@
       </span>
       <svg
         v-if="isMenuMobileOpen === false"
-        @click="isMenuMobileOpen = true"
+        @click="toggleMenuMobile"
         class="bars"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -116,7 +116,7 @@
       </svg>
       <svg
         v-else
-        @click="isMenuMobileOpen = false"
+        @click="toggleMenuMobile"
         class="bars"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -176,6 +176,17 @@ export default {
     updateTheme() {
       document.documentElement.setAttribute("data-theme", this.theme);
       localStorage.setItem("theme", this.theme);
+    },
+    toggleMenuMobile() {
+        this.isMenuMobileOpen = !this.isMenuMobileOpen;
+        this.toggleBodyOverflow();
+    },
+    toggleBodyOverflow() {
+        if (this.isMenuMobileOpen) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
     },
   },
 };

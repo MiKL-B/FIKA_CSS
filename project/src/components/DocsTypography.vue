@@ -23,7 +23,7 @@
       class="code-example"
     ><code>&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;</code></pre>
     <h4>Color</h4>
-    <p>Color can be applied to links, paragraph, span as well as titles</p>
+    <p>Color can be applied to links, paragraph as well as span.</p>
     <div class="flex gap-4">
       <span class="primary">Span</span>
       <span class="success">Span</span>

@@ -2,16 +2,13 @@
   padding: 0 1rem;
 }
 .top-section {
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
 .section-docs {
   padding-top: 1rem;
   padding-bottom: 4rem;
 }
-section{
-  /* background: var(--bg-blockquote);
-  border-radius: 5px; */
-}
+
 .code-example {
   border: 1px solid var(--light-grey);
   border-radius: 5px;
@@ -66,6 +63,9 @@ code {
 .flex-col {
   flex-direction: column;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
 }
@@ -96,6 +96,23 @@ code {
 .capitalize {
   text-transform: capitalize;
 }
-.col{
-  background: var(--bg-blockquote);
+.text-bold{
+  font-weight:500;
+}
+.m-0{
+  margin:0;
+}
+.text-grey{
+  color:var(--light-grey-3);
+}
+.card{
+  border:var(--border-color);
+  border-radius: 5px;
+  padding:1rem;
+}
+.col-docs{
+  background:var(--bg-blockquote);
+}
+.overflow-hidden {
+  overflow: hidden;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <div class="top-section">
       <h1>Fika CSS</h1>
       <p>
@@ -14,6 +14,67 @@
           >Github</a
         >
         <a href="/assets/fika.css" class="button" download>Download</a>
+      </div>
+    </div>
+    <div class="section-docs">
+      <div class="row">
+        <div class="col col-3 card">
+          <div class="card-header">
+            <h4 class="text-bold m-0">Light</h4>
+            <p class="text-grey">Only ~400 lines of code</p>
+          </div>
+          <div class="card-content">
+            <p>A minimalist framework that weighs only a few kilobytes.</p>
+          </div>
+        </div>
+        <div class="col col-3 card">
+          <div class="card-header">
+            <h4 class="text-bold m-0">Responsive</h4>
+            <p class="text-grey">Mobile-first</p>
+          </div>
+          <div class="card-content">
+            <p>A fluid grid of 12 columns that adapts to all screens.</p>
+          </div>
+        </div>
+        <div class="col col-3 card">
+          <div class="card-header">
+            <h4 class="text-bold m-0">Simple style</h4>
+            <p class="text-grey">Clean and elegant design</p>
+          </div>
+          <div class="card-content">
+            <p>
+              Careful typography and minimalist components for a professional
+              look.
+            </p>
+          </div>
+        </div>
+        <div class="col col-3 card">
+          <div class="card-header">
+            <h4 class="text-bold m-0">Ready to use</h4>
+            <p class="text-grey">No configuration</p>
+          </div>
+          <div class="card-content">
+            <p>Start immediately with elegant default styles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-docs">
+      <div class="row flex gap-4 justify-center text-center">
+        <div class="col col-3">
+          <h4 class="text-bold m-0">Installation Simple</h4>
+          <p class="text-grey">
+            Un simple fichier CSS à inclure dans votre projet
+          </p>
+        </div>
+        <div class="col col-3">
+          <h4 class="text-bold m-0">Performance</h4>
+          <p class="text-grey">Impact minimal sur le temps de chargement</p>
+        </div>
+        <div class="col col-3">
+          <h4 class="text-bold m-0">Personnalisable</h4>
+          <p class="text-grey">Facile à modifier et à adapter à vos besoins</p>
+        </div>
       </div>
     </div>
   </div>
