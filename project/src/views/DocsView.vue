@@ -61,6 +61,7 @@ export default {
             { name: "datalist", url: "/docs/datalist" },
             { name: "details", url: "/docs/details" },
             { name: "fieldset", url: "/docs/fieldset" },
+            { name: "image", url: "/docs/image" },
             { name: "input", url: "/docs/input" },
             { name: "lists", url: "/docs/lists" },
             { name: "section", url: "/docs/section" },

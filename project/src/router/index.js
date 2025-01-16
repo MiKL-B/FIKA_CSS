@@ -24,6 +24,7 @@ import DocsMediaqueries from '@/components/DocsMediaqueries.vue'
 import DocsClasses from '@/components/DocsClasses.vue'
 import DocsGrid from '@/components/DocsGrid.vue'
 import DocsSection from '@/components/DocsSection.vue'
+import DocsImage from '@/components/DocsImage.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -134,6 +135,12 @@ const router = createRouter({
           name:"DocsFieldset",
           component: DocsFieldset,
           meta:{title:"Fieldset"},
+        },
+        {
+          path: 'image',
+          name:"DocsImage",
+          component: DocsImage,
+          meta:{title:"Image"},
         },
         {
           path: 'input',

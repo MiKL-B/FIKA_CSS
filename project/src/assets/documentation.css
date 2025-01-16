@@ -9,8 +9,8 @@
   padding-bottom: 4rem;
 }
 section{
-  background: var(--bg-blockquote);
-  border-radius: 5px;
+  /* background: var(--bg-blockquote);
+  border-radius: 5px; */
 }
 .code-example {
   border: 1px solid var(--light-grey);
@@ -98,5 +98,4 @@ code {
 }
 .col{
   background: var(--bg-blockquote);
-  border-radius: 5px;
 }
