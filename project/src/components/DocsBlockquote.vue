@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Blockquote</h3>
     <blockquote>
       Minimalism is built around the idea that there’s nothing that you’re

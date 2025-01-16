@@ -23,6 +23,7 @@ import DocsBreadcrumb from '@/components/DocsBreadcrumb.vue'
 import DocsMediaqueries from '@/components/DocsMediaqueries.vue'
 import DocsClasses from '@/components/DocsClasses.vue'
 import DocsGrid from '@/components/DocsGrid.vue'
+import DocsSection from '@/components/DocsSection.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -145,6 +146,12 @@ const router = createRouter({
           name:"Docslists",
           component: DocsLists,
           meta:{title:"Lists"},
+        },
+        {
+          path: 'section',
+          name:"DocsSection",
+          component: DocsSection,
+          meta:{title:"Section"},
         },
         {
           path: 'select',

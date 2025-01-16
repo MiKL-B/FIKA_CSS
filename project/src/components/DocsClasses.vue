@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Utilities</h3>
     <h4>Width</h4>
     <pre class="code-example"><code>.w-full {

@@ -36,6 +36,7 @@ export default {
             { name: "fieldset", url: "/docs/fieldset" },
             { name: "input", url: "/docs/input" },
             { name: "lists", url: "/docs/lists" },
+            { name: "section", url: "/docs/section" },
             { name: "select", url: "/docs/select" },
             { name: "separator", url: "/docs/separator" },
             { name: "tables", url: "/docs/tables" },

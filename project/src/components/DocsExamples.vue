@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Examples</h3>
     <h4>Form</h4>
     <form>
@@ -19,7 +19,7 @@
 
       <input type="submit" value="submit" class="button primary w-full" />
     </form>
-    <pre class="code-example"><code>&lt;form class=&quot;form-example&quot;&gt;
+    <pre class="code-example"><code>&lt;form&gt;
   &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
   &lt;input type=&quot;name&quot; placeholder=&quot;John Doe&quot; class=&quot;w-full&quot; /&gt;
 
@@ -37,7 +37,6 @@
   &lt;input type=&quot;submit&quot; value=&quot;submit&quot; class=&quot;button primary w-full&quot; /&gt;
 &lt;/form&gt;</code></pre>
     <p>Other examples will be available later.</p>
-
   </div>
 </template>
 

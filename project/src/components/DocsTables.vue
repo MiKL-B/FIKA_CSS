@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Tables</h3>
     <table class="w-full">
       <thead>

@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Installation</h3>
     <!-- <p>You can install Fika CSS via npm.</p>
     <pre class="code-example"><code>npm install fika-css</code></pre> -->

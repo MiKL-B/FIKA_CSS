@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Textarea</h3>
     <label for="textarea">Message</label>
     <textarea

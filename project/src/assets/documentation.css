@@ -4,11 +4,14 @@
 .top-section {
   padding: 10rem 0;
 }
-.section {
+.section-docs {
   padding-top: 1rem;
   padding-bottom: 4rem;
 }
-
+section{
+  background: var(--bg-blockquote);
+  border-radius: 5px;
+}
 .code-example {
   border: 1px solid var(--light-grey);
   border-radius: 5px;
@@ -95,4 +98,5 @@ code {
 }
 .col{
   background: var(--bg-blockquote);
+  border-radius: 5px;
 }

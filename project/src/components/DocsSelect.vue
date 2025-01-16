@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Select</h3>
     <div class="field">
       <label for="select">Choose a fruit</label>

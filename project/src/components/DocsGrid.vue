@@ -1,5 +1,5 @@
 <template>
-    <div class="section">
+    <div class="section-docs">
       <h3>Grid</h3>
     <div class="container">
       <div class="row">

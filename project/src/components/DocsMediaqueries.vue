@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Media queries</h3>
     <p>Coming soon...</p>
   </div>

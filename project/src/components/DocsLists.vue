@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Lists</h3>
     <!-- unordered list -->
     <ul>

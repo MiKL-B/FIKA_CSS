@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section-docs">
     <h3>Fieldset</h3>
     <fieldset>
       <legend>Legend</legend>
