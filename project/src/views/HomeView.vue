@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="top-section">
+    <div class="section-docs">
       <h1>Fika CSS</h1>
       <p>
         Discover the ideal minimalist framework for your chill code sessions in
@@ -62,18 +62,16 @@
     <div class="section-docs">
       <div class="row flex gap-4 justify-center text-center">
         <div class="col col-3">
-          <h4 class="text-bold m-0">Installation Simple</h4>
-          <p class="text-grey">
-            Un simple fichier CSS à inclure dans votre projet
-          </p>
+          <h4 class="text-bold m-0">Simple Installation</h4>
+          <p class="text-grey">A simple CSS file to include in your project.</p>
         </div>
         <div class="col col-3">
           <h4 class="text-bold m-0">Performance</h4>
-          <p class="text-grey">Impact minimal sur le temps de chargement</p>
+          <p class="text-grey">Minimal impact on load time.</p>
         </div>
         <div class="col col-3">
-          <h4 class="text-bold m-0">Personnalisable</h4>
-          <p class="text-grey">Facile à modifier et à adapter à vos besoins</p>
+          <h4 class="text-bold m-0">Customizable</h4>
+          <p class="text-grey">Easy to modify and adapt to your needs.</p>
         </div>
       </div>
     </div>

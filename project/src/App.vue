@@ -5,8 +5,8 @@
       <RouterLink to="/">Fika CSS</RouterLink>
     </div>
     <div id="nav-desktop-right">
-      <RouterLink to="/contact">Contact</RouterLink>
-      <RouterLink to="/changelog">Changelog</RouterLink>
+      <!-- <RouterLink to="/contact">Contact</RouterLink>
+      <RouterLink to="/changelog">Changelog</RouterLink> -->
       <span @click="toggleTheme" aria-label="Toggle themes">
         <svg
           v-if="theme === 'light'"
@@ -137,7 +137,17 @@
     <LinkCompo @child-click="isMenuMobileOpen = false" />
   </div>
 
-  <RouterView />
+  <RouterView class="container" />
+  <footer class="text-center">
+    <div class="row">
+      <div class="col col-6">
+        <RouterLink to="/contact">Contact</RouterLink>
+      </div>
+      <div class="col col-6">
+        <RouterLink to="/changelog">Changelog</RouterLink>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -178,21 +188,20 @@ export default {
       localStorage.setItem("theme", this.theme);
     },
     toggleMenuMobile() {
-        this.isMenuMobileOpen = !this.isMenuMobileOpen;
-        this.toggleBodyOverflow();
+      this.isMenuMobileOpen = !this.isMenuMobileOpen;
+      this.toggleBodyOverflow();
     },
     toggleBodyOverflow() {
-        if (this.isMenuMobileOpen) {
-            document.body.classList.add("overflow-hidden");
-        } else {
-            document.body.classList.remove("overflow-hidden");
-        }
+      if (this.isMenuMobileOpen) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
     },
   },
 };
 </script>
 <style>
-
 #nav-desktop {
   display: none;
 }

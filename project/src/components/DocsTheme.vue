@@ -1,5 +1,5 @@
 <template>
-  <div class="section-docs">
+  <div class="sub-section-docs">
     <h3>Theme</h3>
     <p>You can set theme by adding attribute "data-theme" to your html tag.</p>
     <p>The value of the attribute is "light" or "dark".</p>

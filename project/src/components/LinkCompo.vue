@@ -53,13 +53,6 @@ export default {
             {name:"media queries",url:"/docs/mediaqueries"},
           ]
         },
-        {
-          title: "About",
-          links: [
-            { name: "contact", url: "/contact" },
-            { name: "changelog", url: "/changelog" },
-          ],
-        },
       ],
     };
   },

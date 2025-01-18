@@ -1,5 +1,5 @@
 <template>
-  <div class="section-docs">
+  <div class="sub-section-docs">
     <h3>Button</h3>
     <button>Button</button>
     <pre class="code-example"><code>&lt;button&gt;Button&lt;/button&gt;</code></pre>

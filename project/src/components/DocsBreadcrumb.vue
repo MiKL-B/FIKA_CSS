@@ -1,5 +1,5 @@
 <template>
-  <div class="section-docs">
+  <div class="sub-section-docs">
     <h3>Breadcrumb</h3>
     <ul class="breadcrumb">
       <li><a href="#">Fika</a></li>

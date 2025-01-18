@@ -1,5 +1,5 @@
 <template>
-  <div class="section-docs">
+  <div class="sub-section-docs">
     <h3>Introduction</h3>
     <p>
       To get started, download our framework and explore our documentation

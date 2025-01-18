@@ -25,6 +25,7 @@ import DocsClasses from '@/components/DocsClasses.vue'
 import DocsGrid from '@/components/DocsGrid.vue'
 import DocsSection from '@/components/DocsSection.vue'
 import DocsImage from '@/components/DocsImage.vue'
+import DocsLandingPage from '@/components/DocsLandingPage.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
 
@@ -49,6 +50,12 @@ const router = createRouter({
       path: '/:catchAll(.*)', // Cela capturera toutes les routes non définies
       name: 'NotFoundCompo',
       component: NotFoundCompo,
+    },
+    {
+      path: '/landingpage',
+      name:"DocsLandingPage",
+      component: DocsLandingPage,
+      meta:{title:"Landingpage"},
     },
     {
       path: '/docs',
@@ -101,6 +108,7 @@ const router = createRouter({
           component: DocsExamples,
           meta:{title:"Examples"},
         },
+
         {
           path: 'blockquote',
           name:"DocsBlockquote",

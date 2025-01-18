@@ -1,5 +1,5 @@
 <template>
-  <div class="section-docs">
+  <div class="sub-section-docs">
     <h3>Image</h3>
     <h4>Standard</h4>
     <img alt="An image" src="https://picsum.photos/600/200" class="w-full"/>

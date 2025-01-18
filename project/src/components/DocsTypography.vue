@@ -1,5 +1,5 @@
 <template>
-  <div class="section-docs">
+  <div class="sub-section-docs">
     <h3>Typography</h3>
     <h4>Heading</h4>
     <h1>Heading</h1>

@@ -1,5 +1,5 @@
 <template>
-  <div class="section-docs">
+  <div class="sub-section-docs">
     <h3>Datalist</h3>
     <label for="browser">Choose your browser:</label>
     <input list="browsers" name="browser" id="browser" placeholder="Enter text here..."/>

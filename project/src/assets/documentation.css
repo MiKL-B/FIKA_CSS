@@ -1,14 +1,17 @@
 .container-docs {
   padding: 0 1rem;
-}
-.top-section {
-  padding: 4rem 0;
-}
-.section-docs {
-  padding-top: 1rem;
-  padding-bottom: 4rem;
+
 }
 
+.section-docs {
+
+  padding: 3rem 0;
+  margin-bottom: 1rem;
+}
+.sub-section-docs{
+  padding:3rem 1rem;
+  margin-bottom: 1rem;
+}
 .code-example {
   border: 1px solid var(--light-grey);
   border-radius: 5px;
