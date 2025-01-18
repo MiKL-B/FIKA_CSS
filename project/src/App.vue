@@ -151,7 +151,7 @@ export default {
     return {
       isMenuMobileOpen: false,
       windowWidth: window.innerWidth,
-      theme: "dark",
+      theme: "light",
     };
   },
   mounted() {
