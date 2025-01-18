@@ -16,4 +16,4 @@
 
 👨‍💻Lien vers le projet GitHub: https://github.com/MiKL-B/FIKA_CSS
 
-💻Lien vers Fika CSS:
+💻Lien vers Fika CSS: https://fika-css.vercel.app/
