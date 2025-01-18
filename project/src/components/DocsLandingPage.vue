@@ -7,7 +7,7 @@
       </div>
       <button class="primary">Log in</button>
     </nav>
-    <section class="bg-dark">
+    <section>
       <div class="container">
         <div class="row">
           <div class="col col-6 content-center">
@@ -56,7 +56,7 @@
       </div>
     </section>
 
-    <section class="bg-dark text-center">
+    <section class="text-center">
       <div class="container">
         <h3>Need help ?</h3>
         <p>

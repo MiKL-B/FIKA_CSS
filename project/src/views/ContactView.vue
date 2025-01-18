@@ -2,7 +2,7 @@
   <div class="contact-form">
     <h3>Contact</h3>
     <div class="flex gap-4">
-      <a href="https://github.com/MiKL-B/" target="_blank">Github</a>
+      <a href="https://github.com/MiKL-B/FIKA_CSS" target="_blank">Github</a>
       <a
         href="mailto:michaelbecquer@protonmail.com"
         target="_blank"

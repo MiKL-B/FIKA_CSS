@@ -20,7 +20,6 @@ import ContactView from '@/views/ContactView.vue'
 import ChangelogView from '@/views/ChangelogView.vue'
 import NotFoundCompo from '@/components/NotFoundCompo.vue'
 import DocsBreadcrumb from '@/components/DocsBreadcrumb.vue'
-import DocsMediaqueries from '@/components/DocsMediaqueries.vue'
 import DocsClasses from '@/components/DocsClasses.vue'
 import DocsGrid from '@/components/DocsGrid.vue'
 import DocsSection from '@/components/DocsSection.vue'
@@ -89,12 +88,6 @@ const router = createRouter({
           name:"DocsGrid",
           component: DocsGrid,
           meta:{title:"Grid"},
-        },
-        {
-          path: 'mediaqueries',
-          name:"DocsMediaqueries",
-          component: DocsMediaqueries,
-          meta:{title:"Media queries"},
         },
         {
           path: 'theme',

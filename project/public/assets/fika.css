@@ -36,15 +36,7 @@
 .mx-auto{
   margin:0 auto;
 }
-.bg-dark{
-  background:var(--background);
-  color:white;
-  border:none;
 
-}
-.bg-dark input{
-  color:white;
-}
 .flex{
   display: flex;
 }
@@ -399,15 +391,7 @@ section {
   margin-bottom: 1rem;
 
 }
-/* section.medium {
-  padding: 3rem;
-}
-section.desktop {
-  padding: 9rem 4.5rem;
-}
-section.large {
-  padding: 18rem 6rem;
-} */
+
 
 /* image */
 img{

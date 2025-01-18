@@ -5,8 +5,6 @@
       <RouterLink to="/">Fika CSS</RouterLink>
     </div>
     <div id="nav-desktop-right">
-      <!-- <RouterLink to="/contact">Contact</RouterLink>
-      <RouterLink to="/changelog">Changelog</RouterLink> -->
       <span @click="toggleTheme" aria-label="Toggle themes">
         <svg
           v-if="theme === 'light'"
@@ -138,16 +136,7 @@
   </div>
 
   <RouterView class="container" />
-  <footer class="text-center">
-    <div class="row">
-      <div class="col col-6">
-        <RouterLink to="/contact">Contact</RouterLink>
-      </div>
-      <div class="col col-6">
-        <RouterLink to="/changelog">Changelog</RouterLink>
-      </div>
-    </div>
-  </footer>
+ 
 </template>
 
 <script>

@@ -77,7 +77,6 @@ export default {
           links:[
             {name:"classes",url:"/docs/classes"},
             {name:"grid",url:"/docs/grid"},
-            {name:"media queries",url:"/docs/mediaqueries"},
           ]
         },
       ],

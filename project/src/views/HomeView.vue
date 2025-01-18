@@ -10,7 +10,7 @@
       </p>
       <div class="flex gap-4">
         <RouterLink to="/docs" class="button primary">Get started</RouterLink>
-        <a href="https://github.com/MiKL-B/" target="_blank" class="button"
+        <a href="https://github.com/MiKL-B/FIKA_CSS" target="_blank" class="button"
           >Github</a
         >
         <a href="/assets/fika.css" class="button" download>Download</a>
@@ -75,5 +75,15 @@
         </div>
       </div>
     </div>
+    <footer class="text-center">
+    <div class="row">
+      <div class="col col-6">
+        <RouterLink to="/contact">Contact</RouterLink>
+      </div>
+      <div class="col col-6">
+        <RouterLink to="/changelog">Changelog</RouterLink>
+      </div>
+    </div>
+  </footer>
   </div>
 </template>

@@ -47,7 +47,7 @@
       </div>
       <button class="primary">Log in</button>
     </nav>
-    <section class="bg-dark">
+    <section>
       <div class="container">
         <div class="row">
           <div class="col col-6 content-center">
@@ -96,7 +96,7 @@
       </div>
     </section>
 
-    <section class="bg-dark text-center">
+    <section class="text-center">
       <div class="container">
         <h3>Need help ?</h3>
         <p>
@@ -164,7 +164,7 @@
   &lt;/div&gt;
   &lt;button class=&quot;primary&quot;&gt;Log in&lt;/button&gt;
 &lt;/nav&gt;
-&lt;section class=&quot;bg-dark&quot;&gt;
+&lt;section&gt;
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col col-6 content-center&quot;&gt;
@@ -213,7 +213,7 @@
   &lt;/div&gt;
 &lt;/section&gt;
 
-&lt;section class=&quot;bg-dark text-center&quot;&gt;
+&lt;section class=&quot;text-center&quot;&gt;
   &lt;div class=&quot;container&quot;&gt;
     &lt;h3&gt;Need help ?&lt;/h3&gt;
     &lt;p&gt;
