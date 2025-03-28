@@ -55,6 +55,7 @@ export default {
         {
           title: "Components",
           links: [
+            { name: "avatar", url:"/docs/avatar"},
             { name: "blockquote", url: "/docs/blockquote" },
             { name: "breadcrumb", url: "/docs/breadcrumb" },
             { name: "button", url: "/docs/button" },
@@ -68,6 +69,7 @@ export default {
             { name: "select", url: "/docs/select" },
             { name: "separator", url: "/docs/separator" },
             { name: "tables", url: "/docs/tables" },
+            { name: "tabs", url: "/docs/tabs"},
             { name: "textarea", url: "/docs/textarea" },
             { name: "typography", url: "/docs/typography" },
           ],

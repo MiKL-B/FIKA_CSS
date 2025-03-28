@@ -3,10 +3,12 @@
     <h3>Utilities</h3>
     <h4>Width</h4>
     <table class="w-full">
-      <tr>
-        <th>Name</th>
-        <th>CSS</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
           <td>w-full</td>
