@@ -5,6 +5,7 @@ import DocsTypography from '@/components/DocsTypography.vue'
 import DocsInput from '@/components/DocsInput.vue'
 import DocsExamples from '@/components/DocsExamples.vue'
 import DocsInstallation from '@/components/DocsInstallation.vue'
+import DocsAvatar from '@/components/DocsAvatar.vue'
 import DocsBlockquote from '@/components/DocsBlockquote.vue'
 import DocsDatalist from '@/components/DocsDatalist.vue'
 import DocsDetails from '@/components/DocsDetails.vue'
@@ -25,6 +26,7 @@ import DocsGrid from '@/components/DocsGrid.vue'
 import DocsSection from '@/components/DocsSection.vue'
 import DocsImage from '@/components/DocsImage.vue'
 import DocsLandingPage from '@/components/DocsLandingPage.vue'
+import DocsTabs from '@/components/DocsTabs.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
 
@@ -101,7 +103,12 @@ const router = createRouter({
           component: DocsExamples,
           meta:{title:"Examples"},
         },
-
+        {
+          path:'avatar',
+          name:"DocsAvatar",
+          component:DocsAvatar,
+          meta:{title:"Avatar"},
+        },
         {
           path: 'blockquote',
           name:"DocsBlockquote",
@@ -179,6 +186,12 @@ const router = createRouter({
           name:"DocsTables",
           component: DocsTables,
           meta:{title:"Tables"},
+        },
+        {
+          path:"tabs",
+          name:"DocsTabs",
+          component:DocsTabs,
+          meta:{title:"Tabs"},
         },
         {
           path: 'textarea',

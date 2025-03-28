@@ -38,7 +38,7 @@
 &lt;/form&gt;</code></pre>
 
     <h4>Landing page</h4>
-    <RouterLink to="/landingpage" target="_blank">To Landing page example</RouterLink>
+    <!-- <RouterLink to="/landingpage" target="_blank">To Landing page example</RouterLink> -->
     <!-- landing page -->
     <nav class="justify-between">
       <div class="flex gap-4">

@@ -2,19 +2,23 @@
   <div v-for="section in sections" :key="section.title">
     <span>{{ section.title }}</span>
     <ul class="links">
-      <li class="link-doc capitalize" v-for="link in section.links">
+      <li class="flex gap-4 link-doc capitalize" v-for="link in section.links">
         <RouterLink @click="handle" :key="link.id" :to="link.url">{{
           link.name
         }}</RouterLink>
+        <span v-if="link.version === latestVersion">New!</span>
       </li>
     </ul>
   </div>
 </template>
 <script>
+import { useVersionStore } from '@/store/index';
 export default {
   name: "LinkCompo",
+  emits: ["child-click"],
   data() {
     return {
+      versionStore: useVersionStore(),
       sections: [
         {
           title: "Get started",
@@ -28,6 +32,7 @@ export default {
         {
           title: "Components",
           links: [
+            { name: "avatar" , url:"/docs/avatar", version:"1.1.0"},
             { name: "blockquote", url: "/docs/blockquote" },
             { name: "breadcrumb", url: "/docs/breadcrumb" },
             { name: "button", url: "/docs/button" },
@@ -41,6 +46,7 @@ export default {
             { name: "select", url: "/docs/select" },
             { name: "separator", url: "/docs/separator" },
             { name: "tables", url: "/docs/tables" },
+            { name: "tabs", url: "/docs/tabs", version:"1.1.0"},
             { name: "textarea", url: "/docs/textarea" },
             { name: "typography", url: "/docs/typography" },
           ],
@@ -55,7 +61,12 @@ export default {
       ],
     };
   },
-  emits: ["child-click"],
+  
+  computed: {
+    latestVersion() {
+      return this.versionStore.latestVersion;
+    }
+  },
   methods: {
     handle() {
       this.$emit("child-click", this.message);
