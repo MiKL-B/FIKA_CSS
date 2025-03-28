@@ -5,7 +5,7 @@
     <ul>
       <li>Creation of Fika CSS</li>
     </ul>
-    <h5>v 1.1.0</h5>
+    <h5>v 1.1.0: 28/03/2025</h5>
     <span>New components:</span>
     <ul>
       <li>Avatar</li>
