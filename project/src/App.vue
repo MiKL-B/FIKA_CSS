@@ -135,7 +135,7 @@
     <LinkCompo @child-click="isMenuMobileOpen = false" />
   </div>
 
-  <RouterView class="container" />
+  <RouterView  />
  
 </template>
 
