@@ -17,3 +17,20 @@
 👨‍💻Lien vers le projet GitHub: https://github.com/MiKL-B/FIKA_CSS
 
 💻Lien vers Fika CSS: https://fika-css.vercel.app/
+
+## Changelog
+v 1.0.0
+- Creation of Fika CSS
+
+v 1.1.0: 28/03/2025
+
+New components:
+- Avatar
+- Tabs
+
+Improves:
+- Add details animation
+- Add accent color for checkbox, radio, file and range inputs
+- Add disabled style for inputs, textarea
+- Add new colors for buttons
+- Add outline buttons
