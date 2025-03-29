@@ -1,34 +1,30 @@
 <template>
-  <div class="content">
-    <div id="menu-docs" class="display-desktop">
-      <LinkCompo />
-    </div>
-    <div class="content-docs">
-      <ul class="breadcrumb">
-        <li v-for="(route, index) in matchedRoutes" :key="index">
-          <router-link v-if="route.path" :to="route.path">{{
-            route.title
-          }}</router-link>
-          <span v-else>{{ route.title }}</span>
-        </li>
-      </ul>
-      <RouterView class="container-docs" />
+  <div class="container">
 
-      <div class="flex justify-between p-4 capitalize">
-        <RouterLink
-          :to="getPreviousLink()"
-          v-if="getPreviousLink()"
-          class="text-left"
-          >{{ getPreviousName() }}</RouterLink
-        >
-        <span v-else></span>
-        <RouterLink
-          :to="getNextLink()"
-          v-if="getNextLink()"
-          class="text-right"
-          >{{ getNextName() }}</RouterLink
-        >
-        <span v-else></span>
+    <div class="content">
+      <div id="menu-docs" class="display-desktop">
+        <LinkCompo />
+      </div>
+      <div class="content-docs">
+     
+        <RouterView class="container-docs" />
+  
+        <div class="flex justify-between p-4 capitalize">
+          <RouterLink
+            :to="getPreviousLink()"
+            v-if="getPreviousLink()"
+            class="text-left"
+            >{{ getPreviousName() }}</RouterLink
+          >
+          <span v-else></span>
+          <RouterLink
+            :to="getNextLink()"
+            v-if="getNextLink()"
+            class="text-right"
+            >{{ getNextName() }}</RouterLink
+          >
+          <span v-else></span>
+        </div>
       </div>
     </div>
   </div>
