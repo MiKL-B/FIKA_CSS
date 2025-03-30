@@ -247,32 +247,39 @@ a.button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-  height: 38px;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
+  height: 38px;
+  line-height: 38px;
   gap: 0.5rem;
+  padding: 0 1rem;
   box-sizing: border-box;
   border: var(--border-color);
   background: transparent;
   color: var(--text-color);
-  padding: 0 1rem;
   border-radius: 5px;
-  font-size: 0.75rem;
-  line-height: 38px;
-  text-transform: uppercase;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   text-decoration: none;
-  align-items: center;
   &:hover {
     cursor: pointer;
     border-color: var(--grey);
   }
 }
-
+a.button svg,
+a.button i,
 button svg,
-button i {
-  width: 16px;
-  height: 16px;
+button i,
+input[type="submit"] svg,
+input[type="button"] svg,
+input[type="reset"] svg,
+input[type="submit"] i,
+input[type="button"] i,
+input[type="reset"] i {
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: middle;
 }
 
 button.primary,
